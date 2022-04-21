@@ -1,0 +1,139 @@
+/* 初始化 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  background: #f7fafd;
+  font-size: .3rem;
+}
+
+/* 初始化 */
+/* 头部 */
+.head {
+  width: 7.5rem;
+  height: .8rem;
+  background: #fff;
+  text-align: center;
+  line-height: .8rem;
+  position: relative;
+  font-size: .4rem;
+}
+
+.head .left {
+  position: absolute;
+  left: .2rem;
+  /* top: 50%; */
+
+}
+
+/* 头部 */
+/* A */
+.list {
+  width: 7.5rem;
+
+}
+
+.list .til {
+  width: 7.5rem;
+  padding: 0 .2rem;
+  height: .8rem;
+  background: #f7fafd;
+  line-height: .8rem;
+  /* font-size: .35rem; */
+}
+
+.list .lis {
+  width: 7.5rem;
+  padding: 0 .2rem;
+  background: #fff;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  border: .01rem solid #eee;
+}
+
+.list .lis .left img {
+  width: .8rem;
+  height: .8rem;
+  vertical-align: center;
+}
+
+.list .lis .right {
+  margin-left: .2rem;
+}
+
+.list .lis .right .top {
+  width: 2.5rem;
+  flex: 1;
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list .lis .right .top p {
+  font-size: .35rem;
+}
+
+.list .lis .right .top .age {
+  font-size: .25rem;
+  color: #ccc;
+}
+
+.list .lis .right .bottom {
+  width: 2.5rem;
+  height: 45%;
+  /* border: 1px solid ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: .2rem;
+}
+
+.list .lis .right .bottom .tag {
+  width: 1.2rem;
+  height: .5rem;
+  text-align: center;
+  font-size: .27rem;
+  border-radius: .1rem;
+  margin-left: .1rem;
+  line-height: .5rem;
+}
+
+.list .lis .right .bottom .tag1 {
+  background: #fff8e4;
+  color: #fddc7e;
+}
+
+.list .lis .right .bottom .tag2 {
+  background: #ffebee;
+  color: #fb8175;
+}
+
+/* A */
+/* B */
+.list .lis .right .bottom1 {
+  width: 2.5rem;
+  height: 45%;
+  margin-top: .2rem;
+}
+
+.list .lis .right .bottom1 .tag3 {
+  width: 1.2rem;
+  height: .5rem;
+  text-align: center;
+  font-size: .27rem;
+  border-radius: .1rem;
+  margin-left: .1rem;
+  line-height: .5rem;
+  background: #f1f2fe;
+  color: #6d77f4;
+}
+
+/* B */

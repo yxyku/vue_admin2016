@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .colors {
+        width: 600px;
+        margin: 20px auto;
+        display: flex;
+    }
+
+    .colors div {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .red {
+        background: red;
+        position: relative;
+    }
+
+    .green {
+        background: green;
+        position: relative;
+    }
+
+    .black {
+        background: #000;
+        position: relative;
+    }
+
+    .act {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .box {
+        width: 600px;
+        margin: 20px auto;
+        display: flex;
+        list-style: none;
+    }
+
+    .box li {
+        width: 100px;
+        border: 1px solid green;
+        border-collapse: collapse;
+        text-align: center;
+        color: green;
+        font-weight: 600;
+    }
+    
+</style>
+
+<body>
+    <div class="colors">
+        <div class="red"> <span></span></div>
+        <div class="green"><span></span></div>
+        <div class="black"><span></span></div>
+    </div>
+    <ul class="box">
+        <li>新闻</li>
+        <li>娱乐</li>
+        <li>体育</li>
+        <li>电影</li>
+        <li>音乐</li>
+        <li>旅游</li>
+    </ul>
+
+</body>
+<script>
+    var lis = document.querySelectorAll('.colors>div')
+    var box = document.querySelector('.box')
+    var gl = document.querySelectorAll('span')
+    
+
+   
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].onclick = function () {
+            for (var j = 0; j < lis.length; j++) {
+                lis[j].children[0].removeAttribute('class')
+            }
+            this.children[0].setAttribute('class', 'act')
+            box.style.backgroundColor=this.getAttribute('class')
+
+            if(this.getAttribute('class')=="red"){
+                document.body.style.backgroundColor='pink'
+            }else if(this.getAttribute('class')=="green"){
+                document.body.style.backgroundColor='#green'
+            }else{
+                document.body.style.backgroundColor='gray'
+            }
+        }
+    }
+</script>
+
+</html>

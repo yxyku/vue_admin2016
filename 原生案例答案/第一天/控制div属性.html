@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btns{
+        width: 80%;
+        margin: 20px auto;
+        /* border: 1px solid; */
+        text-align: center;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        background: #000;
+        margin: 20px auto;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        background: #000;
+        margin: 20px auto;  
+    }
+    
+</style>
+<body>
+    <div class="btns">
+        <button class="changeWidth">变宽</button>
+        <button class="changeHeight">变高</button>
+        <button class="changeColor">变色</button>
+        <button class="changeShow">隐藏</button>
+        <button class="again">重置</button>
+    </div>
+
+    <div class="box"></div>
+</body>
+
+</html>
+<script>
+    let width=document.querySelector('.changeWidth')
+    let height=document.querySelector('.changeHeight')
+    let color=document.querySelector('.changeColor')
+    let show=document.querySelector('.changeShow')
+    let ag=document.querySelector('.again')
+    let box=document.querySelector('.box')
+    
+    width.onclick=function(){
+        box.style.width="200px"
+    }
+    height.onclick=function(){
+        box.style.height="200px"
+    }
+    color.onclick=function(){
+        box.style.background="pink"
+    }
+    show.onclick=function(){
+        box.style.display="none"
+    }
+    ag.onclick=function(){
+        box.removeAttribute('style')
+    }
+</script>

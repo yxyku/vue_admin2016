@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 700px;
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box .minbox{
+      width: 150px;
+      height: 150px;
+      border: 1px solid;
+      padding: 10px;
+      box-sizing: border-box;
+      list-style: 150px;
+      text-align: center;
+    }
+    img{
+      opacity: 0.5;
+    }
+    /* img:hover{
+      opacity: 1;
+    } */
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="minbox"><img src="./1.jpg" alt=""></div>
+    <div class="minbox"><img src="./1.jpg" alt=""></div>
+    <div class="minbox"><img src="./1.jpg" alt=""></div>
+    <div class="minbox"><img src="./1.jpg" alt=""></div>
+    <div class="minbox"><img src="./1.jpg" alt=""></div>
+    <div class="minbox"><img src="./1.jpg" alt=""></div>
+    <div class="minbox"><img src="./1.jpg" alt=""></div>
+    <div class="minbox"><img src="./1.jpg" alt=""></div>
+  </div>
+</body>
+<script>
+    var imgs=document.querySelectorAll('img')
+    
+    for(var i=0;i<imgs.length;i++){
+      imgs[i].onmouseover=function(){
+        this.style.opacity=1
+      }
+      imgs[i].onmouseout=function(){
+        this.style.opacity=0.5
+      }
+    }
+
+</script>
+</html>

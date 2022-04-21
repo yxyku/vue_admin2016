@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="name">
+    <label>属性名:</label>
+    <input type="text" class="inp1">
+  </div>
+  <div class="name">
+    <label>属性值:</label>
+    <input type="text" class="inp2">
+  </div>
+  <div>
+    <button class="qd" onclick="a">确定</button>
+    <button class="cz">重置</button>
+  </div>
+  <div class="box" >
+    在上方输入框输入"属性名"及"属性值",点击确定按钮查看效果.
+  </div>
+</body>
+<script>
+var inp1=document.querySelector('.inp1')
+var inp2=document.querySelector('.inp2')
+var qd=document.querySelector('.qd').addEventListener('click',a)
+var cz=document.querySelector('.cz')
+var box=document.querySelector('.box')
+
+// 方法二
+function a(){
+  var inp1Val=inp1.value
+  var inp2Val=inp2.value
+  box.style.cssText=inp1Val+':'+inp2Val
+}
+// cssText表示可以写多个样式如：background:red,color:yellow
+cz.onclick=function(){
+  inp1.value=""
+  inp2.value=""
+  box.style.cssText=""
+}
+
+
+
+
+
+
+
+
+// 方法一
+// qd.onclick=function(){
+//   var inp1Val=inp1.value
+//   var inp2Val=inp2.value
+//   box.style[inp1Val]=[inp2Val]
+// }
+// cz.onclick=function(){
+//   inp1.value=""
+//   inp2.value=""
+//   box.removeAttribute('style')
+// }
+
+
+
+
+
+
+
+
+</script>
+</html>
+<style>
+  .box{
+    width: 200px;
+    height: 200px;
+    background: green;
+    color: #fff;
+    font-size: 16px;
+  }
+</style>

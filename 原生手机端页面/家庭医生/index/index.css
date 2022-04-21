@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+
+/* 上 */
+.top {
+  width: 7.5rem;
+  padding: 0 .2rem;
+}
+
+.top .head {
+  width: 7.1rem;
+  /* border: 1px solid; */
+  height: .6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .3rem;
+}
+
+.top .head img {
+  vertical-align: middle;
+}
+
+.top .gird {
+  width: 7.1rem;
+ 
+  background: #f7fafd;
+  /* border: 1px solid; */
+  overflow: visible;
+  /* float: left; */
+}
+
+.top .gird .box {
+  width: 7.1rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, #3dd4a8, #55d8c2);
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  padding-bottom: .4rem;
+}
+
+.top .gird .box .minBox {
+  width: 1.9rem;
+  padding-left: .3rem;
+  line-height: .5rem;
+}
+
+.top .gird .box .minBox p {
+  color: #a1eadb;
+  font-size: .25rem;
+}
+
+.top .gird .box .minBox h3 {
+  font-size: .4rem;
+  color: #fff;
+}
+
+.top .gird .button {
+  width: 7.1rem;
+  height: 2.5rem;
+  font-size: .3rem;
+  background: #fff;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  position: relative;
+  left: 0;
+  bottom: .3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.top .gird .button .minBox{
+  width: 33%;
+  height: 1.5rem;
+
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.top .gird .button .minBox .mini{
+  width: .8rem;
+  height: .8rem;
+  border-radius: .15rem;
+  background: #006ef1;
+  text-align: center;
+  line-height: .95rem;
+}
+.top .gird .button .minBox .mini1{
+  background: #fddb78;
+}
+.top .gird .button .minBox .mini2{
+  background: #fa746b;
+}
+.top .gird .button .minBox .mini img{
+  width: .44rem;
+  height: .44rem;
+}
+/* 上 */
+/* gird */
+.qy {
+  width: 7.5rem;
+  padding: 0 .2rem;
+  font-size: .3rem;
+  padding-bottom: .5rem;
+}
+.qy .head{
+  width: 7.1rem;
+  height: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qy .head p{
+  font-size: .35rem;
+}
+.qy .head span{
+  font-size:.3rem;
+  color: #9f9f9f;
+}
+.qy .card{
+  padding: .4rem;
+  width: 7.1rem;
+  height: 4rem;
+  /* border: 1px solid; */
+  border-radius: .15rem;
+  box-shadow: .04rem .04rem .04rem #eae9e9;
+  background: #fff;
+  line-height: .75rem;
+  margin-bottom: .2rem;
+}
+.qy .card .desc{
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qy .card .desc .left{
+  display: flex;
+  width: 3rem;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.qy .card .desc .left .name{
+  font-size: .3rem;
+}
+.qy .card .desc .left .age{
+  font-size: .25rem;
+}
+.qy .card .desc .left .imgs{
+  width: .3rem;
+  height: .3rem;
+  background: #d1e4fc;
+  text-align: center;
+  line-height: .3rem;
+  border-radius: .05rem;
+}
+.qy .card .desc .left .jigou{
+  width: 1rem;
+  height: .4rem;
+  background: #e2e4fd;
+  font-size: .2rem;
+  line-height: .4rem;
+  text-align: center;
+}
+.qy .card .desc .right{
+  font-size: .25rem;
+  color: #fa7f75;
+}
+.qy .card .mini{
+  width: 100%;
+  display: flex;
+  color: #8d8d8d;
+ 
+}
+.qy .card .mini .a{
+  margin-left: .4rem;
+ 
+}
+/* gird */
+/* 底部 */
+.tabbar{
+  width: 7.5rem;
+  height: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: .2rem;
+  background: #fff;
+}
+.tabbar .box{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: .6rem;
+}
+.dw{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%)
+}
+/* 底部 */

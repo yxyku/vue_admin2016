@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="city" value="石家庄"><br>
+    <input type="text" class="district" value="长安区"><br>
+    <button class="btn">传参</button>
+</body>
+<script>
+    var city = document.querySelector('.city')
+    var district = document.querySelector('.district')
+    var btn = document.querySelector('.btn')
+    
+    var cityVal=""
+    var disVal=""
+    city.onblur = function () {
+        console.log(this.value)
+        cityVal = this.value
+    }
+    district.onblur = function () {
+        disVal = this.value
+    }
+    btn.onclick = function () {
+        if (cityVal == "" || disVal == "") {
+            alert(city.value)
+            alert(district.value)
+        } else {
+            alert(cityVal)
+            alert(disVal)
+
+        }
+        // city.value = ""
+        // district.value = ""
+    }
+
+
+</script>
+
+</html>

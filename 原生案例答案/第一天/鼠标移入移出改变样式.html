@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background: #000;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 14px;
+        /* padding: 10px; */
+        box-sizing: border-box;
+        border: 8px solid;
+    }
+    
+</style>
+<body>
+    <div class="box">
+        鼠标移入改变样式,鼠标移出恢复
+    </div>
+</body>
+<script>
+    var box=document.querySelector('.box')
+    box.onmouseenter=function(){
+        // console.log(0)
+        this.style.backgroundColor="#fff"
+        this.style.color="red"
+        this.style.border="8px solid red"
+    }
+    box.onmouseleave=function(){
+        this.removeAttribute('style')
+    }
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .box{
+    width: 150px;
+    margin: 20px auto;
+
+  }
+  .box .box1{
+    width: 70px;
+    height: 90px;
+    border: 1px solid blue;
+    color: blue;
+    list-style: none;
+    padding: 0;
+    margin-top:5px;
+    display: none;
+    /* line-height: 30px;
+     */
+  }
+  .box1 li{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+  }
+  .box1 li:hover{
+    background: rgb(208, 208, 244);
+  }
+  .box1 li:nth-child(3){
+    border-top: 1px solid blue;
+    /* border-bottom: 1px solid blue; */
+  }
+</style>
+
+<body>
+<div class="box">
+  <button class="btn">输入法</button>
+  <ul class="box1">
+    <li>手写</li>
+    <li>拼音</li>
+    <li class="a">关闭</li>
+  </ul>
+</div>
+</body>
+<script>
+  let btn=document.querySelector('.btn')
+  let ul=document.querySelector('.box1')
+  let gb=document.querySelector('.a')
+  var flag=true
+  btn.onclick=function(){
+    console.log(flag)
+    flag=!flag
+    if(flag==false){
+      ul.style.display="block"
+    }else{
+      ul.style.display="none"
+    }
+
+  
+  }
+  gb.onclick=function(){
+    ul.style.display="none"
+  }
+</script>
+</html>
