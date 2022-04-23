@@ -12,58 +12,79 @@
   <div class="box">
     <header>
       <ul class="tab">
-        <li class="li1 active" data-index="0">第一节课</li>
-        <li class="li1" data-index="1">第二节课</li>
-        <li class="li1" data-index="2">第三节课</li>
+        <li class="li " data-index="0">第一节课</li>
+        <li class="li" data-index="1">第二节课</li>
+        <li class="li" data-index="2">第三节课</li>
       </ul>
     </header>
     <div class="list">
-      <ul class="lis">
-        <li data-index="0">想回家,想放假1</li>
-        <li data-index="0">想回家,想放假1</li>
-        <li data-index="1">想回家</li>
-        <li data-index="1">想回家</li>
-        <li data-index="1">想回家</li>
-        <li data-index="2">想回家,想放假2</li>
-        <li data-index="2">想回家,想放假2</li>
-        <li data-index="2">想回家,想放假2</li>
-        <li data-index="2">想回家,想放假2</li>
-        <li data-index="2">想回家,想放假2</li>
-        <li data-index="2">想回家,想放假2</li>
-        <li data-index="2">想回家,想放假2</li>
-        <li data-index="2">想回家,想放假2</li>
-
+      <ul style="display: block;" data-index="0">
+        <li>111111111</li>
+        <li>111111111</li>
+        <li>111111111</li>
+        <li>111111111</li>
+        <li>111111111</li>
+      </ul>
+      <ul data-index="1">
+        <li>222222222</li>
+        <li>222222222</li>
+        <li>222222222</li>
+        <li>222222222</li>
+        <li>222222222</li>
+      </ul>
+      <ul data-index="2">
+        <li>333333333</li>
+        <li>333333333</li>
+        <li>333333333</li>
+        <li>333333333</li>
+        <li>333333333</li>
       </ul>
     </div>
   </div>
 </body>
 <script>
-  let tabs = document.querySelectorAll(".li1")
-  let lists = document.querySelectorAll('.lis>li')
 
-  tabs.forEach(item => {
-    // console.log(item)
-    lists.forEach(item1 => {
-      console.log(item1)
-      console.log(item)
-      if (item.getAttribute('data-index') == item1.getAttribute('data-index')) {
-        item1.style.display = 'block'
-      } else {
-        item1.style.display = 'none'
-      }
-      item.onmouseover = function () {
-        this.setAttribute('class', 'active')
+  let lis = document.querySelectorAll('.tab>.li')
+  let uls = document.querySelectorAll('.list>ul')
+  var active = 0
+  for (var j = 0; j < lis.length; j++) {
+    lis[j].index = j
+    console.log(lis[j].index)
+    lis[j].onmouseover = function () {
+      for (var i = 0; i < lis.length; i++) {
+        console.log(this.index)
+        if(this.index==this.getAttribute('data-index')){
+          this.setAttribute('class',"active")
+        }
 
       }
-      item.onmouseout = function () {
-        this.removeAttribute('class')
+      for(var a=0;a<uls.length;a++){
+       console.log(uls[a])
+       if(this.getAttribute('data-index')==uls[a].getAttribute('data-index')){
+         uls[a].style.display="block"
+       }
       }
-    })
 
-  })
+    }
+    lis[j].onmouseout = function () {
+      for (var i = 0; i < uls.length; i++) {
+        // console.log(this.index)
+        if(this.index==this.getAttribute('data-index')){
+          this.removeAttribute('class')
+        }
+
+      }
+      for(var a=0;a<uls.length;a++){
+       console.log(uls[a])
+       if(this.getAttribute('data-index')==uls[a].getAttribute('data-index')){
+         uls[a].style.display="none"
+       }
+      }
+    }
+  }
 
 
- 
+
 
 </script>
 
@@ -93,6 +114,7 @@
     color: #fff;
     list-style: none;
     display: flex;
+    position: relative;
   }
 
   .tab li {
@@ -102,17 +124,19 @@
 
   }
 
-  .list .lis {
+  .list ul {
     width: 100%;
     height: 400px;
     border: 1px solid;
     line-height: 30px;
     font-size: 12px;
     padding: 0 20px;
+    list-style: none;
+    position: absolute;
 
   }
 
-  .list .lis li {
+  .list ul {
     display: none;
   }
 </style>

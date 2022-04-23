@@ -1,0 +1,128 @@
+/* 初始化 */
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 750px;
+  min-width: 350px;
+  font-size: 20px;
+  background: #f7fafd;
+  margin: 0 auto;
+}
+/* 头部 */
+.head {
+  width: 7.5rem;
+  height: .6rem;
+  background: #fff;
+  text-align: center;
+  line-height: .6rem;
+  position: relative;
+  padding:0 .2rem;
+}
+
+.head .title {
+  font-size: .3rem;
+}
+
+.head .left {
+  position: absolute;
+  left: .2rem;
+}
+/* 头部 */
+/* 服务管理 */
+.qy {
+  width: 7.5rem;
+  padding: 0 .2rem;
+  font-size: .3rem;
+  padding-bottom: .5rem;
+}
+.qy .head{
+  width: 7.1rem;
+  height: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qy .head p{
+  font-size: .35rem;
+}
+.qy .head span{
+  font-size:.3rem;
+  color: #9f9f9f;
+}
+.qy .card{
+  padding: .4rem;
+  width: 7.1rem;
+  height: 4rem;
+  /* border: 1px solid; */
+  border-radius: .15rem;
+  box-shadow: .04rem .04rem .04rem #eae9e9;
+  background: #fff;
+  line-height: .75rem;
+  margin-bottom: .2rem;
+}
+.qy .card .desc{
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qy .card .desc .left{
+  display: flex;
+  width: 3rem;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.qy .card .desc .left .name{
+  font-size: .3rem;
+}
+.qy .card .desc .left .age{
+  font-size: .25rem;
+}
+.qy .card .desc .left .imgs{
+  width: .3rem;
+  height: .3rem;
+  background: #d1e4fc;
+  text-align: center;
+  line-height: .3rem;
+  border-radius: .05rem;
+}
+.qy .card .desc .left .jigou{
+  width: 1rem;
+  height: .4rem;
+  background: #e2e4fd;
+  font-size: .2rem;
+  line-height: .4rem;
+  text-align: center;
+  color: blue;
+}
+.qy .card .desc .right{
+  font-size: .25rem;
+  color: #fa7f75;
+}
+.qy .card .mini{
+  width: 100%;
+  display: flex;
+  color: #333;
+ 
+}
+.qy .card .mini .a{
+  margin-left: .4rem;
+ 
+}
+/* 服务管理 */
+/* 底部 */
+.noMore{
+  width: 7.5rem;
+  height: .4rem;
+  text-align: center;
+  /* margin-top: .2rem; */
+  color: #ccc;
+  padding-bottom: 1.5rem;
+  font-size: .2rem;
+}
+/* 底部 */

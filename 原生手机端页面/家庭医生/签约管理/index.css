@@ -1,0 +1,143 @@
+/* 初始化 */
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 750px;
+  min-width: 350px;
+  font-size: 20px;
+  background: #f7fafd;
+  margin: 0 auto;
+}
+/* 头部 */
+.head {
+  width: 7.5rem;
+  height: .8rem;
+  background: #fff;
+  text-align: center;
+  line-height: .8rem;
+  position: relative;
+  padding:0 .2rem;
+}
+
+.head .title {
+  font-size: .3rem;
+}
+
+.head .left {
+  position: absolute;
+  left: .2rem;
+}
+/* 头部 */
+/* 签约管理 */
+.qy {
+  width: 7.5rem;
+  padding: 0 .2rem;
+  font-size: .3rem;
+  padding-bottom: .5rem;
+ margin-top: .2rem;
+}
+
+.qy .card{
+  padding: .4rem;
+  width: 7.1rem;
+  height: 4rem;
+  /* border: 1px solid; */
+  border-radius: .15rem;
+  box-shadow: .04rem .04rem .04rem #eae9e9;
+  background: #fff;
+  line-height: .75rem;
+  margin-bottom: .2rem;
+}
+.qy .card .desc{
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qy .card .desc .left{
+  display: flex;
+  width: 3rem;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.qy .card .desc .left .name{
+  font-size: .3rem;
+}
+.qy .card .desc .left .age{
+  font-size: .25rem;
+}
+.qy .card .desc .left .imgs{
+  width: .3rem;
+  height: .3rem;
+  background: #d1e4fc;
+  text-align: center;
+  line-height: .3rem;
+  border-radius: .05rem;
+}
+.qy .card .desc .left .jigou{
+  width: 1rem;
+  height: .4rem;
+  background: #e2e4fd;
+  font-size: .2rem;
+  line-height: .4rem;
+  text-align: center;
+}
+.qy .card .desc .right{
+  font-size: .25rem;
+  color: #fa7f75;
+}
+.qy .card .mini{
+  width: 100%;
+  display: flex;
+  color: #333;
+ 
+}
+.qy .card .mini .b{
+  margin-left: .25rem;
+ 
+}
+.qy .card .mini p{
+  margin-right: .2rem;
+}
+/* 签约管理 */
+/* tab */
+.tab{
+  width: 7.5rem;
+  padding: 0 .2rem;
+  background: #fff;
+  height: .8rem;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .3rem;
+  list-style: none;
+}
+.tab li{
+display: block;
+height: 100%;
+line-height: .8rem;
+/* border: 1px solid; */
+}
+.tab li:nth-child(1){
+  border-bottom:3px solid #3dd4a7;
+  color: #3dd4a7;
+  font-weight: bold;
+}
+/* tab */
+/* 底部 */
+.noMore{
+  width: 7.5rem;
+  height: .4rem;
+  text-align: center;
+  /* margin-top: .2rem; */
+  color: #ccc;
+  padding-bottom: 1.5rem;
+  font-size: .2rem;
+}
+/* 底部 */
